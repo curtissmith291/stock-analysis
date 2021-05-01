@@ -19,7 +19,8 @@ DQ_Return.png![image](https://user-images.githubusercontent.com/82423123/1167942
 
 Following that analysis, Steve was interested in performing the same analysis on a larger dataset and over two years (2017 and 2018). A more comprehensive script was prepared to analyze the yearly return and total trading volume of 12 companies. the code is available in the yearValueAnalysis.bas file, or as the yearValueAnalysis module in the VBA_Challenge.xlsm file. Additionally, the code is provided below. 
 
-```Sub AllStocksAnalysis()
+```
+Sub AllStocksAnalysis()
 
     Worksheets("All Stocks Analysis").Activate
     Range("A1").Value = "All Stocks 2018"
@@ -75,7 +76,7 @@ Following that analysis, Steve was interested in performing the same analysis on
    
    'Next i'
    
-End Sub```
+End Sub
 ```
 
 Results of the 12 stocks in 2017 and 2018 are presented below. 
@@ -92,7 +93,8 @@ After seeing the positive applications of the aforementioned code, Steve wanted 
 
 The runtimes were relatively high, approximately 0.85 seconds for both 2017 and 2018. As Steve wanted to perform the analysis on a much larger dataset, all stocks, a more efficient script would need to be prepared. The previous code was refactored so that the for loops only ran through each row of data once, rather than twice. The refactored code is available in the AllStocksAnalysisRefactored.bas file, in the VBA_Challenege.xlsm file as module AllStocksAnalysisRefactored, and below. 
 
-```Sub AllStocksAnalysisRefactored()
+```
+Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
     Dim endTime  As Single'
 
@@ -240,7 +242,8 @@ Advantages/Disadvantages of the Original and Refactored VBA Script
 
 The first disadvantage for both scripts (even more so for the intended use of the refactored script, i.e., analysis of all stocks) is that the ticker array needs to be manually populated; a script to automatically populate the ticker array is included below:
 
-```Sub arrTest()
+```
+Sub arrTest()
     
     Worksheets("2018").Activate
     
