@@ -14,8 +14,7 @@ The purpose of this initial analysis was to analyze 12 stocks for the yearly ret
 
 Analysis was performed on the green energy company DAQO New Energy Corp. ($DQ). Yearly returns were calculated by taking the percent difference between the closing prices of DAQO at the beginning and end of 2018. Results showed that DAQO New Energy Corp had a yearly return of -62.60 percent (%). See image below. 
 
-DQ_Return.png![image](https://user-images.githubusercontent.com/82423123/116794230-0ec98600-aa91-11eb-8be0-a6d7c953daaa.png)
-
+DQ_Return.png
 
 Following that analysis, Steve was interested in performing the same analysis on a larger dataset and over two years (2017 and 2018). A more comprehensive script was prepared to analyze the yearly return and total trading volume of 12 companies. the code is available in the yearValueAnalysis.bas file, or as the yearValueAnalysis module in the VBA_Challenge.xlsm file. Additionally, the code is provided below. 
 
